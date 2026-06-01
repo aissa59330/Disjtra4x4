@@ -88,12 +88,11 @@
 
                 if (u.equals(target)) break;
 
-                // Exploration des 4 voisins possibles
                 Point[] voisins = {
-                        new Point(u.x, u.y - 1), // NORD
-                        new Point(u.x, u.y + 1), // SUD
-                        new Point(u.x + 1, u.y), // EST
-                        new Point(u.x - 1, u.y)  // OUEST
+                        new Point(u.x, u.y - 1),
+                        new Point(u.x, u.y + 1),
+                        new Point(u.x + 1, u.y),
+                        new Point(u.x - 1, u.y)
                 };
 
                 for (Point v : voisins) {
